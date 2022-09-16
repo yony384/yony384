@@ -1,0 +1,122 @@
+
+
+html
+<html>
+   <head>
+      <title>Jon Zmudas Global Survey</title>
+   </head>
+   
+   <link rel="stylesheet" href="mainpage.css">
+   <style>
+      @import url(
+'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+        body{
+        font-family: Montserrat;
+        text-align: center;
+        color: #FCA311;
+        font-size: 34px;
+        padding-top: 5vh;
+        overflow: hidden;
+      }
+      div{
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      div:first-of-type{
+        animation: appear 6s infinite;
+      }
+      div:last-of-type{
+        animation: reveal 6s infinite;
+      }
+      div:last-of-type span{
+        font-size: 33px;
+        color: #E5E5E5;
+        animation: slide 6s infinite;
+      }
+      @keyframes appear{
+        0%{opacity: 0;}
+        20%{opacity: 1;}
+        80%{opacity: 1;}
+        100%{opacity: 0;}
+      }
+      @keyframes slide{
+        0%{margin-left:-800px;}
+        20%{margin-left:-800px;}
+        35%{margin-left:0px;}
+      100%{margin-left:0px;}
+      }
+      @keyframes reveal{
+        0%{opacity: 0; width: 0px;}
+        20%{opacity: 1; width: 0px;}
+        30%{width: 670px;}
+        80%{opacity: 1;}
+        100%{opacity: 0; width: 670px;}
+      }
+   </style>
+   <body>
+    <header class="frontpage">
+      <div class="title">Jon Zmudas Global Surveys</div>
+      <div class="subtitle">
+        <span>A Global Survey Portal For Many Topics</span>
+      </div>
+    </header>
+    <p class="heading1">What We Do With Your Information</p>
+    <p class="paragraph1">We take your information on the surveys and enter them into a JSON<br> file where many people can surf through the data using a variety of <br>  programming languages!</p>
+
+    <p class="heading1">Types Of Data You're Giving Away</p>
+    <p class="paragraph1">You are only giving away the data you enter into the survey.<br>You will not be giving away things like your email, your password<br> or your IP address. </p>
+
+    <p class="heading1">Become A Pateron</p>
+    <p class="paragraph1">If you would like to become a Pateron and support our website<br>simply click the button that says "Pateron" at the bottom of your screen! <br>We greatly appreciate any paterons no matter the tier! If you choose<br>to be a Pateron, you are funding our website for years to come!</p>
+   </body>
+
+   <p class="heading1">Signing Up</p>
+   <p class="paragraph1">If you would like to sign up, fill out our form to the <br>right of the page! From there, you can start filling out surveys.</p>
+   
+   <button class="button button1">Github</button>
+   <button class="button button1">Pateron</button>
+   <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  </body>
+</html>``` ```css
+.heading1 {
+    text-align: left;
+}
+.paragraph1 {
+    text-align: left;
+    font-size: 20px;
+    color: #E5E5E5;
+}
+
+.button {
+    background-color: #FCA311;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+  }
+
+.button:hover {
+    background-color:#f8c26a;
+    transition: 0.3s;
+}
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
